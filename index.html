@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Car Game</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+   <div class="container">
+      
+     <div class="score">Score : <br> 00</div>
+      
+      <div class="road">
+         <div class="w-line"></div>
+         <div class="w-line"></div>
+         <div class="w-line"></div>
+         <div class="w-line"></div>
+         
+         <div class="myCar"></div>
+         
+      </div>
+      
+      <button class="leftBtn"><</button>
+      <button class="rightBtn">></button>
+      
+   </div>
+   
+   <div id="startGamePopupContainer">
+      <div id="popupBg">
+         <h2 id="popupHeading">Welcome To Car Game!</h2>
+         <button id="startBtn">Start Now</button>
+      </div>
+   </div>
+   
+   <div id="endGamePopupContainer">
+      <div id="popupBg">
+         <h2>Game Over</h2>
+         <p id="showScorePopup"></p>
+         <div id="popupButtons">
+            <button id="exitBtn">Exit</button>
+            <button id="replayBtn">Replay</button>
+         </div>
+      </div>
+   </div>
+   
+   <script src="main.js"></script>
+</body>
+</html>

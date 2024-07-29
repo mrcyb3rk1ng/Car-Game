@@ -1,0 +1,165 @@
+*{
+   padding: 0 0 0 0;
+   margin: 0 0 0 0;
+   position: relative;
+   box-sizing: border-box;
+   font-family: sans-serif;
+}
+
+.container{
+   height: 100vh;
+   width: 100vw;
+   max-height: 720px;
+   max-width: 360px;
+   margin: auto;
+   overflow: hidden;
+   background-color: green;
+   position: relative;
+   background-image: url('bg.png');
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+
+#startGamePopupContainer, #endGamePopupContainer{
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100vh;
+   width: 100vw;
+   background-color: rgba(0, 0, 0, 0.6);
+}
+
+#endGamePopupContainer{
+   display: none;
+}
+
+#popupBg{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background-color: dodgerblue;
+   border-radius: 25px;
+   padding: 25px;
+   border: 5px solid whitesmoke;
+   text-align: center;
+   align-content: center;
+   color: whitesmoke;
+   transition:.5s;
+}
+
+#popupHeading{
+   margin-bottom: 10px;
+}
+
+#showScorePopup {
+   margin: 10px 0;
+}
+
+#popupButtons{
+   width: 200px;
+   display: flex;
+   justify-content: space-evenly;
+}
+
+#popupButtons button, #startBtn{
+   height: 35px;
+   border: none;
+   border-top-left-radius: 20px;
+   border-top-right-radius: 10px;
+   border-bottom-right-radius: 20px;
+   border-bottom-left-radius: 10px;
+   color: white;
+   font-weight: 500;
+}
+
+#startBtn{
+   width: 200px;
+   background-color: orange;
+}
+
+#exitBtn{
+   background-color: orange;
+   width: 80px;
+}
+
+#replayBtn{
+   background-color: orangered;
+   width: 80px;
+}
+
+.score{
+   position: absolute;
+   left: 25px;
+   top: 25px;
+   font-size: 25px;
+   text-align: center;
+   font-weight: 550;
+}
+
+.road{
+   width: 40%;
+   height: 100%;
+   background-color: #141414;
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+   gap: 50px;
+   position: relative;
+}
+
+.w-line{
+   height: 100px;
+   width: 6px;
+   margin: auto;
+   background-color: whitesmoke;
+}
+
+.myCar{
+   height: 45px;
+   width: 25px;
+   border-radius: 10px;
+   background-image: url('cars/my_car.png');
+   position: absolute;
+   bottom: 150px;
+   left: 0;
+   transform: translateX(60px);
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+   transition:.1s;
+}
+
+.newCar{
+   height: 45px;
+   width: 25px;
+   border-radius: 10px;
+   position: absolute;
+   top: 0;
+   left: 0;
+   transform: translateX(-18px);
+}
+
+.rightBtn{
+   position: absolute;
+   right: 30px;
+   bottom: 100px;
+   background-color: #FFFFFF4A;
+   padding: 15px 20px;
+   border-radius: 20px;
+   font-size: 20px;
+   backdrop-filter: blur(10px);
+}
+
+.leftBtn {
+   position: absolute;
+   left: 30px;
+   bottom: 100px;
+   background-color: #FFFFFF4A;
+   padding: 15px 20px;
+   border-radius: 20px;
+   font-size: 20px;
+   backdrop-filter: blur(10px);
+}
